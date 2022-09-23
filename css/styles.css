@@ -229,6 +229,12 @@ header.transparent p{
     padding: 2rem 1rem;  
 }
 
+.col-33 {
+    width: 33.33333%;
+    padding: 0.5rem 1rem;
+    
+}
+
 .col-50 {
     width: 50%;
     padding: 0.5rem 1rem;
@@ -283,23 +289,26 @@ header.transparent p{
     transition: 400ms all ease-in-out;
 }
 
+.col-50 img:hover{
+    -webkit-transform:scale(1);
+    transform:scale(1.1);
+    border-radius: 1rem;
+}
+
+
 @media (max-width: 720px) {
     .fila {
         flex-direction: column;
         padding: 1rem 0.5rem;
     }
     .col-100,
-    .col-50 {
+    .col-50,
+    .col-33 {
         width: 100%;
     }
 
 }
 
-.col-50 img:hover{
-    -webkit-transform:scale(1);
-    transform:scale(1.1);
-    border-radius: 1rem;
-}
 
 /* Parallax */
 
@@ -316,16 +325,21 @@ header.transparent p{
 
 /* Footer */
 
+
 footer {
     background-color: #393E46;
     box-shadow: 2px 0px 10px #393E46;
 }
+
 
 footer p:first-child {
     color: #EEEEEE;
     font-weight: bold;
 }
 
+/* #qrcode img{
+    animation: none;
+} */
 
 .flex-start {
     display: flex;
@@ -353,6 +367,8 @@ footer .copyright {
     text-align: center;
     margin-top: 4rem;
 }
+
+
 
 /* Flecha arriba */
 
