@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    color: #00ADB5;
+    background-color: #222831;
+}
+
+@media (max-width: 440px) {
+    body{
+        font-size: 18px;
+    }
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    margin-bottom: 0.8rem;
+}
+
+/* header */
+
+header {
+    background-color: #EEEEEE;
+    box-shadow: 1px 1px 4px #EEEEEE;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;   
+    transition: 400ms all ease-in-out;
+}
+
+header.transparent {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+header p{
+    font-weight: bold;
+    font-size: 2rem;
+    color: #222831;
+    
+}
+
+header.transparent p{
+    background-color: transparent;
+    box-shadow: none;
+    color: #EEEEEE;
+    transition: 2000ms all ease-in-out;
+}
+
+/* Fondo pantalla */
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-color: #222831;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+@keyframes heroanimation {
+    0%{
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+
+    12% {
+        opacity: 1;
+    }
+
+    25% {
+        transform: scale(1.2);
+    }
+
+    75% {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.hero div {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    animation: heroanimation 18s infinite;
+}
+
+.hero div:nth-child(1){
+    background-image: url('../img/code.png');
+}
+.hero div:nth-child(2){
+    background-image: url('../img/code2.jpg');
+    animation-delay: 6s;
+}
+.hero div:nth-child(3){
+    background-image: url('../img/code3.jpg');
+    animation-delay: 12s;
+}
+
+.hero .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: none;
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.hero .container a{
+    color: #EEEEEE;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color:  #222831e0;
+    border: 1px solid #222831e0;
+    border-radius: 0.5rem;
+    box-shadow: 4px 1px 4px #222831e0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+    width: 100%;
+    height: 10rem;
+    margin: 1rem 4rem;
+}
+
+.hero .flecha {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: none;
+    opacity: 1;
+    width: 5%;
+    height: auto;
+}
+
+@media (max-width:720px){
+    .hero .container,
+    .hero .container a  {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+    .hero .flecha{
+        width: 15%;
+    }
+}
+
+@media (max-width: 440px){
+    .hero .container,
+    .hero .container a{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    .hero .flecha{
+        width: 20%;
+    }
+}
+
+
+
+/* Contenido */
+
+.primera {
+    margin-top: 100vh;
+}
+
+#pr {
+    display: block;
+    margin-top: -80px;
+    padding-bottom: 80px;
+}
+
+#conocimientos {
+    margin-top: -80px;
+    padding-bottom: 80px;
+}
+
+#experiencia {
+    margin-top: -80px;
+    padding-bottom: 80px;
+}
+
+.fila {
+    display: flex;
+    align-items: center;
+    padding: 2rem 1rem;  
+}
+
+.col-50 {
+    width: 50%;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    overflow:hidden;
+    
+}
+
+.col-100 {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.caja {
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 6px 6px 20px #393E46;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    padding: 1rem 1rem;
+}
+
+.caja h2 {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    color: #EEEEEE;
+    font-weight: bold;
+}
+
+.caja p{
+    margin: 2rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+    line-height: 1.8rem;
+}
+
+.caja ul {
+    padding: 1rem;
+}
+
+.caja ul li {
+    padding-top: 0.8rem;
+}
+
+.col-50 img{
+    border-radius: 1rem;
+    transition: 400ms all ease-in-out;
+}
+
+@media (max-width: 720px) {
+    .fila {
+        flex-direction: column;
+        padding: 1rem 0.5rem;
+    }
+    .col-100,
+    .col-50 {
+        width: 100%;
+    }
+
+}
+
+.col-50 img:hover{
+    -webkit-transform:scale(1);
+    transform:scale(1.1);
+    border-radius: 1rem;
+}
+
+/* Parallax */
+
+.fila.parallax {
+    background-image: url('../img/parallax.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 3rem 2rem;
+}
+
+
+
+/* Footer */
+
+footer {
+    background-color: #393E46;
+    box-shadow: 2px 0px 10px #393E46;
+}
+
+footer p:first-child {
+    color: #EEEEEE;
+    font-weight: bold;
+}
+
+
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+}
+
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.m-r-small {
+    margin-right: 0.5rem;
+}
+
+footer img.rrss {
+    height: 40px;
+}
+
+footer .copyright {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+/* Flecha arriba */
+
+.ir-arriba {
+	display:none;
+	padding:0.5rem;
+	
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+}
