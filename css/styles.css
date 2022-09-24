@@ -15,7 +15,7 @@ body {
 
 @media (max-width: 440px) {
     body{
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
@@ -365,7 +365,40 @@ footer .copyright {
     margin-top: 4rem;
 }
 
+#qrcode {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
 
+#qrcode img {
+    width: 120px;
+    height: 120px;
+}
+
+#qrcode p {
+    font-size: 0.9rem;
+    
+}
+
+@media (max-width: 440px) {
+    footer .movil {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 720px) {
+    footer .movil {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
 
 /* Flecha arriba */
 
