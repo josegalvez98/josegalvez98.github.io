@@ -214,12 +214,12 @@ header.transparent p{
 }
 
 #conocimientos {
-    margin-top: -80px;
+    margin-top: 80px;
     padding-bottom: 80px;
 }
 
 #experiencia {
-    margin-top: -80px;
+    margin-top: 80px;
     padding-bottom: 80px;
 }
 
@@ -263,6 +263,7 @@ header.transparent p{
 }
 
 .caja h2 {
+    margin-top: 0.5rem;
     font-size: 2rem;
     margin-bottom: 0.8rem;
     color: #EEEEEE;
@@ -270,7 +271,7 @@ header.transparent p{
 }
 
 .caja p{
-    margin: 2rem;
+    margin: 0.5rem;
     font-size: 1.5rem;
     padding: 1rem;
     line-height: 1.8rem;
@@ -348,6 +349,9 @@ footer p:first-child {
     font-weight: bold;
 }
 
+footer a {
+    text-decoration-line: underline;
+}
 
 .flex-start {
     display: flex;
@@ -362,7 +366,7 @@ footer p:first-child {
 }
 
 .m-r-small {
-    margin-right: 0.5rem;
+    margin-right: 0.7rem;
 }
 
 footer img.rrss {
