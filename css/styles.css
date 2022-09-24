@@ -301,6 +301,9 @@ header.transparent p{
         flex-direction: column;
         padding: 1rem 0.5rem;
     }
+    .caja{
+        padding: 1rem 0rem;
+    }
     .col-100,
     .col-50,
     .col-33 {
